@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+@font-face {
+  font-family: OpenSansExtrabold;
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+
+.clear{
+	clear: both;
+}
+
+
+header{
+	border-top: 5px solid #d00b01;
+	padding: 36px 0 40px;
+	margin: 56px 0 0 0;
+}
+
+.logo{
+	width: 276px;
+	margin: 0 auto;
+}
+
+.social-icon{
+	float: none;
+	width: 168px;
+	margin: 10px auto;
+}
+
+
+.social-icon ul li{
+	display: inline-block;
+}
+
+.social-icon ul li a{
+	height: 30px;
+	width: 30px;
+	background-color: #d1d1d1;
+	display: block;
+	text-align: center;
+	padding-top:7px ;
+	font-size: 18px;
+	color: #ffffff;
+	border-radius: 100%;
+}
+
+.menu-bg{
+	background-color: #ffffff;
+
+}
+.social-icon ul li a:hover{
+	background-color: #d00b01;
+}
+
+.navbar-nav li a{
+	color: #313131;
+	font-family: 'OpenSansExtrabold';
+	
+}
+
+.navbar-nav li a.m-active{
+	color: #d00b01;
+}
+
+.navbar-nav li a:hover{
+	color: #c5c5c5;
+}
+
+section{
+	margin: 0 0 70px 0;
+}
+
+
+.planing-item{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.planing-item .icon{
+	height: 70px;
+	width: 70px;
+	background-color: #d1d1d1;
+	margin: 0 auto 20px;
+	border-radius: 100%;
+	font-size: 36px;
+	color: #313131;
+}
+
+.planing-item .icon i{
+	padding-top: 17px;
+}
+
+.planing-item .icon:hover{
+	background-color: #d00b01;
+	color: #ffffff;
+}
+
+h2.title{
+	font-family: 'OpenSansExtrabold';
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+	font-size: 20px;
+}
+
+p{
+	font-family: 'Arial';
+	font-size: 12px;
+	line-height: 16px;
+	text-align: justify;
+}
+
+.slogan-content{
+	text-align: center;
+	padding: 40px 0;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+}
+
+.slogan .slogan-content h2.sub-title{
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.slogan .slogan-content h1.big-title{
+	font-size: 30px;
+}
+.border-slo{
+	height: 1px;
+	background: rgb(246,246,246);
+	background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(207,207,207,1) 50%, rgba(246,246,246,1) 100%);
+}
+
+.feature-item{
+	position: relative;
+	margin: 0px 0px 20px 0;
+}
+
+
+.caption{
+	font-size: 50px;
+	position: absolute;
+	top: 85px;
+	left: 110px;
+	color: #313131;
+	display: none;
+}
+.feature-item:hover .caption{
+	display: block;
+}
+
+
+.about{
+	text-align: justify;
+}
+
+.about ul li{
+	font-size: 12px;
+	padding: 0 0 8px 18px;
+	position: relative;
+}
+
+.about ul li:first-child{
+	padding-top: 8px;
+}
+
+.about ul li i{
+	position: absolute;
+	left: 0px;
+}
+
+.read-more{
+	color: #d00b01;
+	font-style: italic;
+	text-decoration: none;
+}
+
+
+.lnews-item .date{
+	height: 70px;
+	width: 70px;
+	background-color: #d1d1d1;
+	border-radius: 100%;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	padding-top: 20px;
+	margin: 0 12px 0 0;
+
+}
+
+.lnews-item .date span{
+	font-size: 17px;
+}
+
+h3.title{
+	font-family: 'Open Sans';
+	font-size: 17px;
+	color: #d00b01;
+	padding-bottom: 16px;
+}
+
+.author, .author a{
+	font-family: 'arial';
+	font-size: 12px;
+	font-style: italic;
+	color: #9d9d9d;
+	text-decoration: none;
+	padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+	.logo{
+		margin: 0;
+	}
+	.social-icon{
+		margin: 0;
+		float: right;
+		
+	}
+	.header{
+		margin: 48px 0 0 0;
+	}
+}
